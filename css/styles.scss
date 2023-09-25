@@ -1,0 +1,21 @@
+@import 'reset';
+@import 'truncate';
+@import 'breakpoints';
+
+h1 {
+   @include truncate(5);
+
+   @include breakpoint(xxl) {
+      color: red;
+   }
+}
+
+html,
+body {
+   height: 100dvh;
+   background: #fff;
+}
+
+.btn {
+   white-space: nowrap;
+}
